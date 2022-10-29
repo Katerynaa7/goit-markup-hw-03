@@ -179,6 +179,20 @@ body {
 .features-list {
   list-style: none;
 }
+/* feature list оформлення флекс */
+.features-work .features-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.features-list .feature-list-descr {
+  margin-right: 30px;
+}
+.features-list .feature-list-descr:last-child {
+  margin-right: 0px;
+}
+
+/* feature list оформлення флекс */
+
 .features-list .feature-title {
   margin-bottom: 10px;
   font-size: 14px;
@@ -187,6 +201,7 @@ body {
   text-transform: uppercase;
 }
 .features-list .list-examples {
+  width: 270px;
   color: var(--secondary-text-color);
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -206,10 +221,20 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
-/* section work example */
-.section-work-ex:nth-child(3n) {
-  margin-right: 0;
+
+/* section work оформлення flex */
+.section-work .list {
+  display: flex;
+  flex-wrap: wrap;
 }
+.list .section-work-ex {
+  margin-right: 30px;
+}
+.list .section-work-ex:last-child {
+  margin-right: 0px;
+}
+/* section work оформлення flex */
+
 .list .part-second-title {
   margin-bottom: 10px;
   font-weight: 500;
@@ -218,6 +243,22 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+/* оформлення флекс для секції наша команда */
+.participants-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.participants-list .list {
+  margin-right: 30px;
+}
+.participants-list .list:last-child {
+  margin-right: 0px;
+}
+.section-picture {
+  margin-bottom: 30px;
+}
+
+/* оформлення флекс для секції наша команда */
 
 .list .part-list-element {
   font-size: 16px;
@@ -236,6 +277,7 @@ address {
 /* .logo-name {
   margin-bottom: 20px;
 } */
+
 .site-contact-list .link-location {
   list-style: none;
   text-decoration: none;
@@ -245,6 +287,12 @@ address {
   text-decoration: none;
 }
 
+.site-contact-list .link-general {
+  margin-bottom: 9px;
+}
+.site-contact-list .link-general:last-child {
+  margin-bottom: 0px;
+}
 .site-contact-list .link-location {
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -271,11 +319,6 @@ address {
 /* css для сторінки Портфоліо */
 /*  пробую початок */
 
-.portfolio-list {
-  display: flex;
-  justify-content: center;
-}
-
 /* .portfolio-list-link:nth-child(3n) {
   margin-right: 8px;
 }
@@ -301,6 +344,21 @@ address {
 .portfolio-list .portfolio-list-link {
   list-style: none;
 }
+
+/* оформлення флекс для списку кнопок */
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+}
+.portfolio-list-link {
+  margin-right: 8px;
+  margin-bottom: 56px;
+}
+.portfolio-list-link:last-child {
+  margin-right: 0px;
+}
+
+/* оформлення флекс для списку кнопок */
 .portfolio-list .portfolio-list-button {
   font-weight: 500;
   font-size: 14px;
