@@ -65,17 +65,70 @@ img {
   /* outline: 2px solid red;
   outline-offset: -2px; */
 }
+
+/* оформлення флекс для header */
+/* .container-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.logo-main {
+  margin-right: 93px;
+}
+
+.site-nav .nav-list {
+  margin-right: 50px;
+}
+.site-contact .nav-list {
+  margin-right: 50px;
+}
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+.site-contact {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+/* оформлення флекс для header */
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   background-color: var(--additional-color);
   color: var(--primary-text-color);
 }
+/* header */
 
+.header-container {
+  display: flex;
+  align-items: center;
+}
+.container-list {
+  display: flex;
+}
+.header-link {
+  margin-right: 93px;
+}
+.header-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.site-contact {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.site-contact {
+  margin-left: auto;
+}
 .logo {
   text-decoration: none;
 }
 .logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 25px;
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
 
@@ -101,14 +154,11 @@ body {
 .site-nav .link {
   text-decoration: none;
 }
-/* оформлення контейнера хедер */
-/* .site-nav {
-  display: flex;
-}
-.container-list {
-  display: flex;
-} */
+
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: calc(16 / 14);
@@ -118,6 +168,7 @@ body {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
+
 .site-contact {
   list-style: none;
 }
@@ -125,6 +176,9 @@ body {
   text-decoration: none;
 }
 .site-contact .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--secondary-text-color);
   font-weight: 500;
   line-height: calc(16 / 14);
@@ -234,7 +288,10 @@ body {
   margin-right: 0px;
 }
 /* section work оформлення flex */
-
+.team-wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
 .list .part-second-title {
   margin-bottom: 10px;
   font-weight: 500;
@@ -242,6 +299,13 @@ body {
   line-height: calc(19 / 16);
   text-align: center;
   letter-spacing: 0.03em;
+}
+.list .part-list-element {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
 }
 /* оформлення флекс для секції наша команда */
 .participants-list {
@@ -260,13 +324,6 @@ body {
 
 /* оформлення флекс для секції наша команда */
 
-.list .part-list-element {
-  font-size: 16px;
-  line-height: calc(19 / 16);
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
-}
 footer {
   background-color: #2f303a;
 }
@@ -278,9 +335,17 @@ address {
   margin-bottom: 20px;
 } */
 
+/* оформлення флекс для footer */
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+/* footer flex */
+
 .site-contact-list .link-location {
   list-style: none;
   text-decoration: none;
+  margin-top: 20px;
 }
 .site-contact-list .link-contact {
   list-style: none;
@@ -336,8 +401,6 @@ address {
   margin-bottom: 50px;
 }
 
-/* пробую кінець */
-
 .site-nav .currentlink {
   color: var(--accent-color);
 }
@@ -378,6 +441,10 @@ address {
 }
 .portfolio-examples-link {
   text-decoration: none;
+}
+.portfolio-wrapper {
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 .portfolio-examples .portfolio-header {
   margin-bottom: 4px;
