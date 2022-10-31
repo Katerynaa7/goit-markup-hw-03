@@ -55,16 +55,15 @@ img {
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-  margin-left: auto;
-  margin-right: auto;
 }
 .container {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid red;
-  outline-offset: -2px; */
+  margin: 0 auto;
 }
+/* outline: 2px solid red;
+  outline-offset: -2px; */
 
 /* оформлення флекс для header */
 /* .container-list {
@@ -91,6 +90,9 @@ img {
 } */
 
 /* оформлення флекс для header */
+.header {
+  border: 1px #ececec;
+}
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
@@ -127,8 +129,6 @@ body {
 }
 .logo {
   display: block;
-  padding-top: 24px;
-  padding-bottom: 25px;
   color: var(--accent-color);
   font-family: 'Raleway', sans-serif;
 
@@ -191,6 +191,7 @@ body {
 
 .hero {
   background-color: #2f303a;
+  padding: 200px 0px;
 }
 
 .hero-title {
@@ -212,7 +213,7 @@ body {
   min-width: 216px;
   min-height: 50px;
   padding: 10px 32px;
-  color: var(--primary-text-color);
+  color: var(--additional-color);
   background-color: var(--accent-color);
   font-family: 'Roboto';
   font-weight: 700;
@@ -229,7 +230,11 @@ body {
   color: var(--additional-color);
   background-color: var(--accent-color);
 }
-
+/* hidden header */
+.hidden-header {
+  visibility: hidden;
+}
+/* hidden header */
 .features-list {
   list-style: none;
 }
@@ -246,6 +251,9 @@ body {
 }
 
 /* feature list оформлення флекс */
+.hidden-header {
+  visibility: hidden;
+}
 
 .features-list .feature-title {
   margin-bottom: 10px;
@@ -264,8 +272,11 @@ body {
 .section-work .section-work-ex {
   list-style: none;
 }
+.team-section {
+  background-color: #f5f4fa;
+}
 
-.part-section .list {
+.team-section .list {
   list-style: none;
 }
 .section-title {
@@ -277,6 +288,9 @@ body {
 }
 
 /* section work оформлення flex */
+.section-work {
+  padding-top: 0px;
+}
 .section-work .list {
   display: flex;
   flex-wrap: wrap;
@@ -300,6 +314,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 }
+.participants-list .list {
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 1px #000000;
+}
 .list .part-list-element {
   font-size: 16px;
   line-height: calc(19 / 16);
@@ -318,14 +337,13 @@ body {
 .participants-list .list:last-child {
   margin-right: 0px;
 }
-.section-picture {
-  margin-bottom: 30px;
-}
 
 /* оформлення флекс для секції наша команда */
 
 footer {
   background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 address {
   font-style: normal;
@@ -345,7 +363,6 @@ address {
 .site-contact-list .link-location {
   list-style: none;
   text-decoration: none;
-  margin-top: 20px;
 }
 .site-contact-list .link-contact {
   list-style: none;
@@ -395,11 +412,12 @@ address {
 .portfolio-examples {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 30px;
 }
-.portfolio-list-button {
+/* запитать чому там відступ */
+/* .portfolio-list-button {
   margin-bottom: 50px;
-}
+} */
 
 .site-nav .currentlink {
   color: var(--accent-color);
@@ -412,11 +430,10 @@ address {
 .portfolio-list {
   display: flex;
   justify-content: center;
+  margin-bottom: 50px;
+  gap: 8px;
 }
-.portfolio-list-link {
-  margin-right: 8px;
-  margin-bottom: 56px;
-}
+
 .portfolio-list-link:last-child {
   margin-right: 0px;
 }
@@ -429,6 +446,9 @@ address {
   letter-spacing: 0.02em;
   cursor: pointer;
   color: var(--primary-text-color);
+  border: none;
+  padding: 6px 22px;
+  border-radius: 4px;
 }
 .portfolio-list .portfolio-list-button:hover,
 .portfolio-list .portfolio-list-button:focus {
